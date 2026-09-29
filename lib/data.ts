@@ -29,7 +29,7 @@ const rand = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 2 ** 32);
 const pick = <T>(arr: readonly T[]) => arr[Math.floor(rand() * arr.length)]
 
 export const SALES: Sale[] = Array.from({ length: 2000 }, () => ({
-    month: Math.floor(rand() * 12),
+    month: Math.floor(rand() * 1.5 * 12),
     category: pick(CATEGORIES),
     region: pick(REGIONS),
     amount: Math.round(50 + rand() * 950)

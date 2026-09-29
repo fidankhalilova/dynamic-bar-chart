@@ -30,11 +30,11 @@ export default function Dashboard() {
 
     return (
       <div className="min-h-screen bg-white p-4 text-slate-900 dark:bg-slate-900 dark:text-slate-100 sm:p-8">
-        <div className="mx-auto max-w-4xl space-y-6">
+        <div className="mx-auto max-w-6xl space-y-6">
           <header className="flex items-center justify-between">
             <h1 className="text-xl font-semibold">Sales Dashboard</h1>
-            <button className={btn} onClick={toggleTheme} aria-pressed={dark}>
-              {dark ? "Light" : "Dark"} mode
+            <button className={btn} onClick={toggleTheme} aria-pressed={darkk}>
+              {darkk ? "Light" : "Dark"} mode
             </button>
           </header>
           <FiltersPanel filters={filters} onChange={setFilters} />
